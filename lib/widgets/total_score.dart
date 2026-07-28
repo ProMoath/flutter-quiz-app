@@ -15,16 +15,19 @@ class TotalScore extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text(
+        const Text(
           'Congratulation!',
           style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 8.0),
         Text(
           'Your Score is $currentTotalScore',
-          style: TextStyle(fontSize: 26, color: Colors.lightBlue),
+          style: const TextStyle(fontSize: 26, color: Colors.lightBlue),
         ),
-        TextButton(onPressed: resetQuizOnPressed, child: Text("Reset Quiz")),
+        TextButton(
+          onPressed: resetQuizOnPressed,
+          child: const Text("Reset Quiz"),
+        ),
       ],
     );
   }

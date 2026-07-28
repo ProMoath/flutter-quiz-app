@@ -42,7 +42,7 @@ class _HomePageState extends State<HomePage> {
     showTotalScore = currentTotalScore >= resultedScore;
     return Scaffold(
       backgroundColor: Colors.white60,
-      appBar: AppBar(title: Text("Home Page")),
+      appBar: AppBar(title: const Text("Home Page")),
       body: !showTotalScore
           ? Center(
               child: Column(
